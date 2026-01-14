@@ -1,0 +1,97 @@
+/* ---------- Top Fixed Bar ---------- */
+.top-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    z-index: 1050; /* above navbar */
+  }
+  
+  /* ---------- Navbar ---------- */
+  .navbar {
+    margin-top: 40px; /* push down below top-container */
+    min-height: 120px; /* enough height for big links */
+    background-color: #eb3838; /* your desired color */
+
+  }
+  
+  /* Navbar links */
+  .navbar.navbar-dark .navbar-nav .nav-link {
+    font-size: 55px; /* big text */
+    font-weight: bold;
+    color: black;  /* sets text color to black */
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Center links */
+  .navbar-nav {
+    margin: 0 auto;
+  }
+  
+  /* ---------- Mid Container ---------- */
+  .mid-container {
+    margin-top: 0px; /* space below top + navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(212, 198, 198);
+  }
+  
+  .mid-container h1 {
+    font-family: 'DynaPuff', sans-serif;
+    font-size: 100px;
+    color: #6e3535;
+  }
+  .intro-box p {
+    font-size: 40px;
+    font-weight: bold;
+}
+  /* Optional: make navbar collapse toggle icon bigger */
+  .navbar-toggler {
+    border: none;
+  }
+  .image-container {
+    display: flex;           /* enables flexbox */
+    justify-content: center; /* centers horizontally */
+    margin-top: 20px;        /* space from your name */
+  }
+  
+  .image-container img {
+    max-width: 450px;        /* adjust size */
+    height: auto;            /* keeps proportions */
+    border-radius: 10px;     /* optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* optional shadow */
+  }
+  
+  
+  .navbar-toggler-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .intro-box {
+    max-width: 800px;          /* limits width so text isn't too wide */
+    margin: 20px auto;         /* centers the box horizontally */
+    padding: 25px 30px;        /* space inside the box */
+    background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white */
+    border-radius: 12px;       /* rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+    text-align: center;        /* centers the text inside */
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;           /* readable paragraph size */
+    color: #333;               /* dark text for contrast */
+}
+
+  
